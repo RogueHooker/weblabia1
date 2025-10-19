@@ -25,3 +25,4 @@ from django.urls import path, include
 urlpatterns = [
     path('university/', include('university.urls')),
 ]
+handler404 = 'weblabia1.views.handler404'
