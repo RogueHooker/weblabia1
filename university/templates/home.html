@@ -1,8 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head><title>Главная</title></head>
-<body>
-<h1>Главная страница</h1>
-<p>Ты дома, ты дома!</p>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+{% block heading %}Главная страница{% endblock %}
+
+{% block content %}
+<div style="max-width: 600px; margin: 40px auto; padding: 20px; background-color: #165899; box-shadow: 0 0 15px #F8C87C; border-radius: 6px; color: #F8C87C; font-family: Arial, sans-serif; text-align: center;">
+    <p>Ты дома, ты дома!</p>
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Успешный вход{% endblock %}
+{% block heading %}Добро пожаловать!{% endblock %}
+
+{% block content %}
+<div style="max-width: 600px; margin: 40px auto; padding: 20px; background-color: #165899; box-shadow: 0 0 15px #F8C87C; border-radius: 6px; color: #F8C87C; font-family: Arial, sans-serif; text-align: center;">
+    <h2>{{ title }}</h2>
+    <p>{{ message }}</p>
+    <p style="margin-top: 20px; text-align: center;">
+        <a href="/">Вернуться на главную</a>
+    </p>
+</div>
+{% endblock %}

@@ -1,7 +1,22 @@
-<!DOCTYPE html>
-<html>
-<head><title>Страница студента</title></head>
-<body>
-<h1>Информация о студенте {{ student_id }}</h1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}Профиль студента{% endblock %}
+{% block heading %}Профиль студента{% endblock %}
+
+{% block content %}
+<div class="student-info">
+    <p><strong>ID студента:</strong> {{ student_id }}</p>
+    <p><strong>Информация:</strong> {{ student_info }}</p>
+    <p><strong>Факультет:</strong> {{ faculty }}</p>
+    <p><strong>Статус:</strong> {{ status }}</p>
+</div>
+
+<div style="margin-top: 20px;">
+    <h3>Другие студенты:</h3>
+    <ul>
+        <li><a href="/university/student/1/">Иван Петров</a></li>
+        <li><a href="/university/student/2/">Мария Сидорова</a></li>
+        <li><a href="/university/student/3/">Алексей Козлов</a></li>
+    </ul>
+</div>
+{% endblock %}
